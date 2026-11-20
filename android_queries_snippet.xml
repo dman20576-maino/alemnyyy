@@ -1,0 +1,9 @@
+<!-- أضف هذا الجزء داخل <manifest> وقبل <application> في:
+     android/app/src/main/AndroidManifest.xml
+     لتفعيل فتح روابط المصادر الخارجية على Android 11+ -->
+<queries>
+  <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="https" />
+  </intent>
+</queries>
